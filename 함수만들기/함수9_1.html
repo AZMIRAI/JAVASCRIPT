@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function main (){
+        alert("이상한 한국어 만들기")
+        let gs = prompt("문장의 수를 적으세요",);
+        arr_ex = new Array();
+        let flag = 0;
+        var a="";
+        let randomIndexArray = []
+        for (i=0; i<gs; i++) {
+          randomNum = Math.floor(Math.random() * gs)
+          if (randomIndexArray.indexOf(randomNum) === -1) {
+            randomIndexArray.push(randomNum)
+          }   else {
+            i--
+          }
+        }
+        for (let i = 1; i <= gs; i++){
+          arr_ex.push(prompt("1자씩 한글로 쓰세요",));
+        }
+        for (let i = 0; i < gs; i++){
+          flag=(randomIndexArray[i]);
+          a= a+arr_ex[flag];
+        }
+        alert(a);
+
+        alert(arr_ex);
+      }
+        main();
+    </script>
+  </body>
+</html>

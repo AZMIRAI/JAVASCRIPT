@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function main (){
+        var a="";
+        alert("한 단어씩으로 문장 만들기");
+        let gs = prompt("몇번 적을거에요?",);
+        arr_ex = new Array();
+        for (let i = 1; i <= gs; i++){
+          arr_ex.push(prompt(i+"번째 단어를쓰세요",));
+          a=a+arr_ex[i-1];
+        }
+          alert(a);
+      }
+        main();
+    </script>
+  </body>
+</html>

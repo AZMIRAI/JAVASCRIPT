@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function main(){
+        alert("컴퓨터랑 가위바위보!");
+        let userStr = prompt("가위 바위 보 입력하세요 ! ");
+        let userNum
+        if (userStr=="가위"){
+          userNum=1;
+        }else if (userStr=="바위"){
+          userNum=2;
+        }else {
+          userNum=3;
+        }
+        let randomNum= parseInt(Math.random()*3+1);
+        if (userNum==randomNum)
+          {
+            alert("비겼습니다");
+          }
+        else if (userNum%3==(randomNum+2)%3){
+            {
+              alert("컴퓨터가 이겼습니다")
+            }
+        }
+        else {
+          alert("당신이 이겼습니다!")
+        }
+      }
+      main();
+      </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function updown(){
+        alert("자바스크립트 업다운!")
+        let flag = 0;
+        let userChoose;
+        let randomNum= parseInt(Math.random()*100+1);
+        while (true){
+          userChoose = prompt("1에서 100사이를 찍으세욨!",);
+          if (randomNum>userChoose){
+            alert("Up!");
+          }else if (randomNum<userChoose){
+            alert("Down!");
+          }else if (randomNum==userChoose){
+            break;
+          }else if (userChoose>100||userchoose<1){
+            alert("범위를 다시입력해");
+          }
+        }
+        alert("맞췄습니다! 미지의 수는 "+randomNum+ " 입니다^^");
+      }
+
+      updown();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function main (){
+        alert("일본어 학습기 랜덤버전")
+        let gs = prompt("문제의 갯수를 말하세요",);
+        arr_ex = new Array();
+        arr_an = new Array();
+        let flag = 0;
+        let randomIndexArray = []
+        for (i=0; i<gs; i++) {
+          randomNum = Math.floor(Math.random() * gs)
+          if (randomIndexArray.indexOf(randomNum) === -1) {
+            randomIndexArray.push(randomNum)
+          }   else {
+            i--
+          }
+        }
+        // alert(randomIndexArray)
+        for (let i = 1; i <= gs; i++){
+          arr_ex.push(prompt(i+"번째의 일본어를 적으세요",));
+          arr_an.push(prompt(i+"번째의 한글을 적으세요"));
+        }
+        for (let i = 0; i < gs; i++){
+          flag=(randomIndexArray[i]);
+          // alert(flag)
+          alert( "문제 : "+ arr_ex[flag]);
+          alert( "답은 : "+ arr_an[flag]);
+        }
+      }
+        main();
+    </script>
+  </body>
+</html>
