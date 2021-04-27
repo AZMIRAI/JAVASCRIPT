@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      사람마다 코딩스타일은 틀리지만 나는 ...
+      1. 단 한줄짜리 중괄호라도 들여쓰기를하자
+      2. 가로길이는 짧게하자
+      3. 세미콜론을 쓰는 습관을 가지자
+      4. 함수는 함수끼리 모아두자
+
+      가독성,이해하기 쉬운코드를 만들어야함
+
+
+      function pow(x, n){
+          let result = 1;
+            for (let i = 0; i < n; i++ ) {
+              result *= x;
+            }
+            return result;
+          }
+
+          let x = prompt("x?", ''),
+              n = prompt("n?", '')
+            if (n <= 0)
+          {
+            alert(`Power ${n} is not supported,
+            please enter an integer number greater than zero`);
+          }
+          else
+          {
+            alert(pow(x, n))
+          }
+  </script>
+  </body>
+</html>

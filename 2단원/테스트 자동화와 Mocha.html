@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      문법 오류는 없다고한다.
+      테스트 코드를 작성하면 당장 쉽게 테스트를
+      진행 할 수 있지만
+      에러가 발생했을 때 에러의 원인을 찾기 힘들어짐
+      describe("주어진 숫자의 n 제곱", function() {
+        it("5를 1 제곱하면 5", function() {
+          assert.equal(pow(5, 1), 5);
+        });
+
+        it("5를 2 제곱하면 25", function() {
+          assert.equal(pow(5, 2), 25);
+        });
+
+        it("5를 3 제곱하면 125", function() {
+          assert.equal(pow(5, 3), 125);
+        });
+      });
+    </script>
+  </body>
+</html>

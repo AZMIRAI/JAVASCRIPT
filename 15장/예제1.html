@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      let age = prompt('나이는?',100);
+
+      function checkAge(age) {
+        if (age > 18) {
+          return true;
+        }
+        else {
+          //if 문만 있는거는 굳이 else 를 쓰지않아도 가능.
+          return confirm('보호자의 동의를 받으셨나요?');
+        }
+      }
+    </script>
+  </body>
+</html>

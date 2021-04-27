@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function main(){
+        alert("내가 지금 뭐 먹고 싶게?")
+        let array = ["치킨","피자","족발","찜닭"]
+        let hosii ="";
+        for (let i=0;i<3;i++){
+          hosii = hosii+array[i]+" ";
+        }
+        alert("아마도 컴퓨터는 "+hosii+"중에 먹고싶어 하는것같다 ..")
+        let randomNum = Math.floor(Math.random() * 3)
+
+        let kotae = prompt("뭐 먹고싶은지 맞춰보세요","")
+        hosii = array[randomNum];
+        // alert(kotae)
+        // alert(hosii)
+        if (kotae==hosii)
+        alert("날 그렇게 잘 안다고? 대단한걸....");
+        else{
+        alert("아직 날 모르는구나?")
+        }
+      }
+      main();
+    </script>
+  </body>
+</html>

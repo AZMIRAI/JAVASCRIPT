@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      let user = prompt("お名前を入力してください", '');
+        if (user == '치킨') {
+          let pass = prompt('パスワード：', '');
+        if (pass == '꼬끼오') {
+          alert( 'ようこそ！' );
+      } else if (pass == '' || pass == null) {
+          alert( 'キャンセルされました' );
+      } else {
+          alert( '認証失敗' );
+        }
+      }
+
+      else if (user == '' || user == null) {
+      alert( 'キャンセルされました' );
+      } else {
+        alert( "認証してないユーザです" );
+      }
+    </script>
+  </body>
+</html>

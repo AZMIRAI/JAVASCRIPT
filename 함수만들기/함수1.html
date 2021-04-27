@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function showMessage() {
+        let classCount  = prompt('과목 갯수를 입력하세용',+(""))
+        let classGrade ;
+        let allgrade    = 0;
+        for (let i = 1; i <= classCount; i++){
+          classGrade  = prompt(i+'번째 학점(0점~4.5점)을 입력하세용',+(""))
+          allgrade =  allgrade+(+(classGrade));
+        
+        }
+        allgrade = allgrade/classCount;
+      if (allgrade >= 4.5) {
+        alert('학점은 A+ 입니다 ㅊㅋㅊㅋ');
+      } else if (allgrade >= 4){
+        alert("학점은 A 입니다");
+      }else if (allgrade >= 3.5){
+        alert("학점은 B+ 입니다");
+      }else if (allgrade >= 3){
+        alert("학점은 B 입니다");
+      }else if (allgrade >= 2.5){
+        alert("학점은 C+ 입니다");
+      }else if (allgrade >= 2){
+        alert("학점은 C 입니다");
+      }else if (allgrade >= 1.5){
+        alert("학점은 D+ 입니다");
+      }else if (allgrade >= 1){
+        alert("학점은 D 입니다");
+      }else if (allgrade < 1){
+        alert("학점은 F 입니다");
+      }
+      }
+      showMessage();
+    </script>
+  </body>
+</html>

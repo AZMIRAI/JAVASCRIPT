@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    function main (){
+      alert("숫자 기억하기")
+      let gs = 2;
+      let arr_ex = [];
+      let arrInt = "";
+      let randomIndexArray = [];
+      let ranInt = "";
+
+      while (true)
+      {
+        for (i=0; i<gs; i++) {
+          randomNum = Math.floor(Math.random() * gs)
+          if (randomIndexArray.indexOf(randomNum) === -1) {
+            randomIndexArray.push(randomNum)
+            ranInt = ranInt+randomNum;
+          }   else {
+            i--
+          }
+        }
+          alert("기억하세요! " + gs + "탄입니다!")
+          alert(randomIndexArray);
+
+        for (let i = 0; i < gs; i++){
+            arr_ex.push(prompt("순서대로 입력하세용^^",));
+            arrInt = arrInt + arr_ex[i];
+        }
+        if (arrInt!=ranInt){
+          alert("바보네요..; 탈락");
+          alert("당신의 기록은 " + gs + "탄 입니다")
+          break;
+        }
+        else{
+          alert("기억력 좋으시네요~ 대단해");
+          alert("업그레이드 한번 더 갑니다~");
+          arrInt="";ranInt="";arr_ex = [];randomIndexArray = [];
+          gs = gs+1;
+        }
+      }
+    }
+      main();
+    </script>
+  </body>
+</html>
