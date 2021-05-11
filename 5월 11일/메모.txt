@@ -1,0 +1,42 @@
+프로그래밍을 하다보면 객체 배열 자료를 가지고 활용
+(단일 데이터, 숫자) 카운팅용변수
+Node.js 모듈에 담아서 사용하는 경우가 많을것임
+// 이름과 성을 요소로 가진 배열
+let arr = ["Bora", "Lee"]
+
+// 구조 분해 할당을 이용해
+// firstName엔 arr[0]을
+// surname엔 arr[1]을 할당하였습니다.
+let [firstName, surname] = arr;
+
+alert(firstName); // Bora
+alert(surname);  // Lee
+undefined
+let Dec31_1969 = new Date(-24 * 3600 * 1000);
+alert( Dec31_1969 );
+undefined
+let date = new Date("2017-01-26");
+alert(date);
+undefined
+let date = new Date("2017-01-26");
+alert(date);
+undefined
+new Date(2011, 0, 1, 0, 0, 0, 0); // 2011년 1월 1일, 00시 00분 00초
+new Date(2011, 0, 1); // hours를 비롯한 인수는 기본값이 0이므로 위와 동일
+Sat Jan 01 2011 00:00:00 GMT+0900 (대한민국 표준시)
+let date = new Date();
+date.setSeconds(date.getSeconds() + 70);
+
+alert( date ); // 70초 후의 날짜가 출력됩니다.
+undefined
+let start = new Date(); // 측정 시작
+
+// 원하는 작업을 수행
+for (let i = 0; i < 100000; i++) {
+  let doSomething = i * i * i;
+}
+
+let end = new Date(); // 측정 종료
+
+alert( `반복문을 모두 도는데 ${end - start} 밀리초가 걸렸습니다.` );
+undefined
