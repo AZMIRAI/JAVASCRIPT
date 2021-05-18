@@ -1,0 +1,186 @@
+
+let obj = new Object();
+obj.toString();
+let arr = [];
+arr.sort();
+
+function User(name){
+this.name = name;
+}
+
+let user = new User("황대영");
+alert(user.name); 
+
+let user = {
+	name : "홍길동",
+	sayHi : function(){alert(this.name)};
+};
+
+
+
+class User {
+	construction (name) {
+	this.name = name
+}
+	sayHi(){alert(this.name);}
+}
+
+let arr = [];
+arr.length;
+arr.sort();
+
+Array = {
+	length ; 0,
+	sort : function() }
+} 
+
+{__proto__}
+
+__proto__ : Object > toString
+
+let user : {}; << 만들자마자 	user.__porto__.toString 생김 (Object)에 있음
+			user.toString();
+
+한가지만 생각하면됨 
+상속을 위해서 프로토 타입이라는 멤버 개념이있다
+
+rabbit.eat;
+
+if ("eat"in rabbit){
+	rabbit["eat"];
+} else {
+	if("eat" in rabbit.__proto__){
+	rabbit.__proto__["eat"];	
+} else {
+	if("eat" in rabbit.__proto__.__proto__){
+	}
+	} 
+}
+
+let user = {}
+user.__proto__ = Array;
+
+function User (){}
+User.prototype = Array;
+
+let user2 = new User();
+// user2.__proto__ >>Array
+
+재미있는거 하나
+
+"aaa".length
+>> 3
+
+"aaa".count();
+>> 없다
+
+"aaa".__proto__
+>> count 없다
+
+String.prototype.count = function() {
+alert(this.length);
+}
+
+>> String 이라는 내장함수 prototype
+
+"aaa". count();
+
+프로토타입을 잘 알면 없는것도 만들어낼수있다
+
+"".isEmail();
+>> 이메일인지 아닌지 확인하는 것을 만들고싶을때
+
+String.prototype.isEmail = function(){
+	return / [a-zA-Z0-9_.]{2,}@[a-zA-Z0-9-]{3,}([.][a-zA-Z0-9-]{2,}){1,} /.test
+}
+
+if ("".isEmail()) {
+alert("이메일 입니다");
+}else {
+alert("이메일이 아닙니다");
+}
+
+
+123.toString();
+
+let num = 123;
+let strNum = num.toString();
+
+let strNum = (new Number(num)).toString();
+
+let num2 = new Number(123);
+num2.toString();
+num2
+
+
+class User {sayhi(){alert("Hi");}}
+
+User
+
+let User2 = class{sayHi(alert("Hi");)}
+
+User2
+
+let iUser = new User ();
+
+iUser
+
+ let iUser3 = {sayHi(){alert ("Hi");}}
+
+iUser3
+
+let iUser4 = {}
+
+iUser4.__proto__ = iUser3;
+
+iUser4
+
+class User {
+
+  constructor(name) {
+    // setter를 활성화합니다.
+    this.name = name;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  set name(value) {
+    if (value.length < 4) {
+      alert("이름이 너무 짧습니다.");
+      return;
+    }
+    this._name = value;
+  }
+
+}
+
+let user = new User("John");
+alert(user.name); // John
+
+user = new User(""); // 이름이 너무 짧습니다.
+
+class Anima{
+	constructor(name);
+		this.speed= 0; 
+		this.name= name;
+}}
+
+let animal = new Animal("공룡");
+
+class Rabbit extends Animal{
+constructor(color){
+	super
+}
+}
+
+let rabbit1 = new Rabbit("black");
+
+rabbit1;
+
+클래스 전부다함
+
+throw new Error("내가 만든 에러");
+
+다음주 프라미스 async, await 
