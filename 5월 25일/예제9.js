@@ -6,3 +6,5 @@ function f() {
   wait().then(result => alert(result));
 }
 f();
+
+//어렵다!!!!!!!!!!!!!!!
