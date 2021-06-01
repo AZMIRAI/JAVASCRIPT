@@ -1,0 +1,66 @@
+Object.toString
+ƒ toString() { [native code] }
+let obj = {};
+undefined
+obj.toString();
+"[object Object]"
+Object.prototype
+{constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}constructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+Object.prototype.toString = () => "메롱";
+() => "메롱"
+obj.toString()
+"메롱"
+let arr = [1,2,3];
+undefined
+arr
+(3) [1, 2, 3]0: 11: 22: 3length: 3__proto__: Array(0)
+arr.toString()
+"1,2,3"
+for(...){str += arr[i].toString()}
+VM700:1 Uncaught SyntaxError: Unexpected token ')'
+Array.prototype.toString = ()=>"배열입니다"
+()=>"배열입니다"
+arr.toString
+()=>"배열입니다"
+Array.prototype.toString = ()=>"배열입니다"
+()=>"배열입니다"
+arr.toString();
+"배열입니다"
+
+노드 JS 소개
+
+모듈
+
+인터페이스 표준 
+모니터 : 입출력표준
+
+호환 캡슐화
+모듈 라이브러리 컴포넌트 함수 
+하드웨어적 컴포넌트
+소프트웨어적 모듈
+
+모듈 : 파일
+입력과 출력
+export 내보내기
+import 가져오기
+
+export > import 구조분해  
+
+상대경로
+.로 시작 아예없거나
+
+./시작하지않으면 인정하지않는다
+현재 위치를 지정하고싶을때는 ./을 무조건 찍는다
+
+SRC랑 MODULE 의 차이
+실행되는시기 모듈 : 내부적으로 html구조가 다 만들어진다음 만들어짐
+src 는 위치에따라서 다름
+
+그문제를 해결하기위해 jquery 사용 
+중복된 파일을 한번만 불러온다
+
+엄격모드로 항상 실행됨
+
+모듈에는 자신만의 스코프가있음 사거리가있음
+
+시험범위
