@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello?</h1>
+    <h2>hello</h2>
+    <h3>hello</h3>
+    <h4>hello</h4>
+    <p>여기서부터 단락입니다~</p>
+    <h5>hello</h5>
+    <h6>hello</h6>
+    <p>
+        줄을 나누고싶어서
+        이렇게 줄을 나눠봤습니다
+
+        과연    그대로    출력할까요?
+    </p>
+<!-- 이렇게 하면 입력한대로는 출력이 되지않는다~~ -->
+
+    <p>
+        줄을 나누고싶어서<br>
+        이렇게 줄을 나눠봤습니다<br>
+        <br>
+        과연    그대로    출력할까요?
+    </p>
+
+    <pre>
+        줄을 나누고싶어서
+        이렇게 줄을 나눠봤습니다
+        
+        과연    그대로    출력할까요?z
+    </pre>
+
+    <p>저는 하나의 단락입니다</p>
+    <hr>
+    <p>저는 하나의 단락입니다</p>
+    <hr>
+    <p>저는 하나의 단락입니다</p>
+    
+    <p><b>이 부분은</b> 중요한 부분이라서 굵게 했습니다</p>
+    <p><strong>이 부분은</strong> 중요한 부분이라서 굵게 했습니다</p>
+    
+    <p><i>이부분</i>은 단순히 글씨가 이텔릭체인 부분입니다</p>
+    <p><em>이부분</em>은 중요한 부분이라서 이텔릭체로 표현 했습니다</p>
+    
+    <p><mark>이부분</mark>만 하이라이팅 하고싶어요</p>
+    
+    <p><del>이부분</del>을 지운 것처럼 하고 싶어요</p>
+    <!-- 이건 솔직히 그냥 지운게 아니라 그냥 중간에 줄 긋는것 -->
+
+    <p><ins>밑줄 친 부분</ins>에 들어갈 알맞은 말을 고르세요</p>
+    <img src="car.jpg" alt="이미지가 없어요?">
+
+    <p>X<sup>2</sup>+Y<sup>3</sup>=Z</p>
+    <p>물을 나타내는 화학식은 H<sub>2</sub>O 입니다.</p>
+
+    <!-- 
+    위첨자(제곱) 아래첨자(몰라) 효과
+    제곱은 suㅔ태그를 사용하고 반대는 sub태그를 사용함-->
+
+    <!-- 
+        짧은 인용구 
+        짧은 인용구는 <q>태그를 사용해서 표현 할 수 있으면서
+        자동으로 앞 뒤에 큰 따옴표가 붙습니다
+    -->
+
+    <p>HTML의 정의는
+        <q>웹 페이지를 만들기 위한 하이퍼텍스트 마크업 언어</q>
+        입니다!</p>
+
+    <p><strong> <abbr title="HyperText Markup Language 5">HTML5</abbr></strong>
+    란 웹 문서를 제작하는 데 쓰이는 프로그래밍 언어인 HTML의 최신규격 입니다.</p>
+    
+    <!-- 주소 표현  -->
+    <!-- 주소를 표현 할 수 있음 -->
+    <!-- 이러한 주소는 이탤릭체로 표현되며, 위아래로 약간의 공백이 삽입! -->
+    <address>
+        서울특별시<br>
+        강남구 테헤란로
+    </address>
+
+    <!-- 엔티티 -->
+    <p><p>태그는 두번째로 큰 제목을 나타내는 태그입니다</p>
+    <p>&lt;p&gt;태그는 단락을 나타내는 태그입니다</p>
+
+    <p>j에 악센트가 있다는 발음 기호는 [j&#769;]입니다.</p>
+
+    <h1 style="background-color:turquoise">
+    style 속성을 이용한 배경색 변경</h1>
+
+    <h1 style="color:maroon">
+    style 속성을 이용한 글자색 변경</h1>
+
+    <h1 style="font-size: 250%;">
+    style 속성을 이용한 글자 크기 변경</h1>
+
+    <h1 style="text-align: center;">
+    style 속성을 이용한 문단 정렬 변경</h1>
+
+    <h1 style="background-color: wheat; color: violet; text-align: center;">
+    style 속성을 이용하여 한번에 스타일링 하기!
+    </h1>
+    
+    <h1 style="color: blue;">색상 이름으로 표현된 파란색</h1>
+    <h1 style="color: green;">색상 이름으로 표현된 녹색</h1>
+    <h1 style="color: silver;">색상 이름으로 표현된 은색</h1>
+    <h1 style="color: teal;">색상 이름으로 표현된 청록색</h1>
+    <h1 style="color: red;">색상 이름으로 표현된 빨간색</h1>
+
+    <hr>
+    
+    <h1 style="color: rgb(0, 0,255);">RGB 색상으로 표현된 파란색</h1>
+    <h1 style="color: rgb(0,128,0);">RGB 색상으로 표현된 녹색</h1>
+    <h1 style="color: rgb(192, 192, 192);">RGB 색상으로 표현된 은색</h1>
+    <h1 style="color: rgb(0, 128,128);">RGB 색상으로 표현된 청록색</h1>
+    <h1 style="color: rgb(255, 0, 0);">RGB 색상으로 표현된 빨간색</h1>
+
+    
+
+
+</body>
+</html>
